@@ -36,8 +36,8 @@ This project implements a job management system with a backend built on **Node.j
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/ShehrozAhmadDev/calo-jobs-task
+   cd calo-jobs-task
    ```
 
 2. **Install Dependencies**:
@@ -63,6 +63,8 @@ This project implements a job management system with a backend built on **Node.j
    npm install
    ```
 
+   This will install all the dependencies and will run postinstall command as well which is used to install ts-node. We are using ts-node for transpiling typescript files.
+
 3. **Start the Client**:
    Navigate to the `client` folder and start the development server.
 
@@ -84,14 +86,15 @@ This project implements a job management system with a backend built on **Node.j
 
 ## Time Report
 
-### 1. Backend Development (7 hours):
+### 1. Backend Development (6 hours):
 
 - **Project Setup** (1 hour):
 
   - Configured Express with TypeScript.
   - Added necessary tools like ts-node for development and TypeScript configuration.
+  - Setuped validation, error and logging middlewares in the application.
 
-- **Job Management APIs** (3 hours):
+- **Job Management APIs** (2 hours):
 
   - Implemented APIs for creating a job, fetching all jobs, and retrieving specific job details.
   - Handled file-based persistence for job storage.
@@ -100,7 +103,7 @@ This project implements a job management system with a backend built on **Node.j
   - Set up **Worker Threads** for concurrent job processing to avoid blocking the event loop.
   - Implemented **SSE** to send real-time updates to the client when jobs are resolved.
 
-### 2. Frontend Development (5 hours):
+### 2. Frontend Development (4.5 hours):
 
 - **Project Setup** (0.5 hour):
 
@@ -111,7 +114,7 @@ This project implements a job management system with a backend built on **Node.j
   - Created a responsive design using **shadcn components** and Tailwind CSS.
   - Built a layout to display job statuses and results.
 
-- **API Integration** (2.5 hours):
+- **API Integration** (2 hours):
 
   - Integrated job-related APIs to fetch, display, and create jobs.
   - Implemented real-time updates using SSE.
