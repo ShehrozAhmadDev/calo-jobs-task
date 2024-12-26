@@ -1,0 +1,60 @@
+{
+  "name": "calo-task",
+  "version": "0.1",
+  "description": "Calo Task Server",
+  "main": "dist/index.js",
+  "author": "Shehroz Ahmad <shehrozahmad970@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run compile && pm2 start ecosystem.config.json --no-daemon",
+    "compile": "tsc --build",
+    "compile:watch": "tsc --build --watch",
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.ts",
+    "prettier:fix": "prettier --write **/*.ts",
+    "test": "jest",
+    "postinstall": "npm install ts-node"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/http-errors": "^2.0.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.4",
+    "@types/validator": "^13.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0",
+    "http-status": "^1.7.4",
+    "joi": "^17.13.3",
+    "morgan": "^1.10.0",
+    "pm2": "^5.4.2",
+    "ts-node": "^10.9.2",
+    "validator": "^13.12.0",
+    "winston": "^3.14.2"
+  }
+}
